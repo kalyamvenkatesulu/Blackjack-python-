@@ -7,7 +7,7 @@ def user_game():
     dealer_card1 = choice(cards)
     dealer_card2 = choice(cards)
     hit_card =choice(cards)
-    current_score = card_1+card_2 
+    current_score = user_card1+user_card2 
     current_cards = [user_card1,user_card2]
     dealer_cards=[dealer_card1]
     dealer_score =dealer_card1+dealer_card2 
