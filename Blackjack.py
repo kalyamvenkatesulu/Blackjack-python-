@@ -2,13 +2,13 @@ import random
 from random import choice 
 def user_game():
     cards = [11,2,3,4,5,6,7,8,9,10,10,10,10,10,10]
-    card_1 = choice(cards)
-    card_2 = choice(cards)
+    user_card1 = choice(cards)
+    user_card2 = choice(cards)
     dealer_card1 = choice(cards)
     dealer_card2 = choice(cards)
     hit_card =choice(cards)
     current_score = card_1+card_2 
-    current_cards = [card_1,card_2]
+    current_cards = [user_card1,user_card2]
     dealer_cards=[dealer_card1]
     dealer_score =dealer_card1+dealer_card2 
     print(f"your cards{current_cards} = {current_score}")
@@ -42,7 +42,7 @@ def user_game():
        
     while dealer_game: 
          
-         if current_score==22 or current_score>=22:
+         if current_score== 21 or current_score>= 21:
              dealer_cards.append(dealer_card2)
              dealer_game  = False           
              print(f"hear  is dealer score {dealer_cards}={dealer_score}")  
